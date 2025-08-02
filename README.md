@@ -1,69 +1,64 @@
-# React + TypeScript + Vite
+# 🧠 auto-dev-Todo list
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto de lista de tarefas criado 100% com Inteligência Artificial. A ideia, estrutura e execução foram conduzidas com auxílio de AIs especializadas:
 
-Currently, two official plugins are available:
+- 📋 **Task-Master AI** gerou a lista de funcionalidades.
+- 💻 **Cursor AI** interpretou e implementou o código.
+- ⚛️ Baseado em **React** com **Vite** para um ambiente de desenvolvimento moderno e eficiente.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🧩 Etapas da Criação do Projeto com IA
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. O Task-Master AI gerou a lista de tarefas e funcionalidades da aplicação, usando como base o arquivo PRD.md
+2. A lista foi alimentada no Cursor AI, que usou como base as instruções de dev_workflow.md e iniciou a criação do projeto com React + Vite.
+3. O Cursor AI interpretou a estrutura, criou os arquivos e desenvolveu os componentes conforme as instruções.
+4. O código foi revisado e testado localmente.
+5. O projeto foi versionado com Git e publicado no GitHub.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Como executar o projeto localmente
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+Siga os passos abaixo para rodar o projeto em sua máquina:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 1. Clone o repositório
+
+```bash
+git clone https://github.com/seu-usuario/auto-dev-todo-list.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 2. Acesse o diretório do projeto
+```bash
+cd auto-dev-todo-list
 ```
+
+### 3. Instale as dependências
+Você precisa ter o Node.js instalado (versão LTS recomendada). Depois, execute:
+
+```bash
+  npm install
+```
+ou
+```bash
+  yarn
+```
+
+### 4. Inicie o servidor de desenvolvimento
+
+```bash
+  npm run dev
+```
+ou
+```bash
+  yarn dev
+```
+A aplicação ficará disponível em http://localhost:5173.
+
+# 🛠️ Scripts disponíveis
+- npm run dev — Inicia o servidor de desenvolvimento com Vite
+- npm run build — Gera uma build otimizada para produção
+- npm run preview — Serve a build localmente para teste
+
+# 🤖 Sobre o desenvolvimento com IA
+Este projeto é fruto de uma colaboração totalmente automatizada:
+- A funcionalidade foi definida por Task-Master AI.
+- O código foi interpretado e desenvolvido por Cursor AI com acompanhamento de contexto.
